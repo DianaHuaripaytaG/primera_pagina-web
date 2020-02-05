@@ -205,3 +205,31 @@ color:rgb(255, 15, 95);
   margin-right: auto;
   width: 40%;
 }
+footer{
+  background: rgb(198, 37, 246);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #CE7D35;
+  
+}
+footer ul{
+  display: flex;
+  list-style: none;
+}
+footer li{
+  margin-left: 10px;
+}
+footer p{
+  margin-bottom: 0;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 540px) {
+  header nav{
+      display: none;
+  }
+  header .fa-bars {
+      display: block;
+  }
+}
