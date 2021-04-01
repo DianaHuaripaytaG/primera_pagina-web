@@ -7,150 +7,124 @@ padding: 0;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 }
-
-/* body{
-background: #313D52;
-} */
-
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(231, 158, 182);
-  height: 64px;
-  padding: 12px;
-  background-attachment: scroll;
-}
-header .logo {
-font-size: 24px;
-
-}
-header .logo i {
-  font-size: 25px;
-}
-.navegacion{
-width: 1000px;
-margin: 30px auto;
-background: #fff;
-}
-
-.navegacion ul{
-list-style: none;
-}
-
-.menu > li{
-position: relative;
-display: inline-block;
-}
-
-.menu > li > a{
-display: block;
-padding: 15px 20px;
-color: #353535;
-font-family: 'Open sans';
-text-decoration: none;
-}
-
-.menu li a:hover{
-color: #CE7D35;
-transition: all .3s;
-}
-
-/*   Submenu */
-
-.submenu{
-position: absolute;
-background: #333333;
-width: 120%;
-visibility: hidden;
-opacity: 0;
-transition: opacity 1.5s;
-}
-
-.submenu li a{
-display: block;
-padding: 15px;
-color: #fff;
-font-family: 'Open sans';
-text-decoration: none;
-}
-
-.menu li:hover .submenu{
-visibility: visible;
-opacity: 1;
-}
-/* slider */
-.slider{
-  width: 95%;
-  margin:auto;
-  overflow: hidden;
-}
-.slider ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
-
-  /* animación */
-  animation: cambio 20s infinite;
-  animation-direction: alternate;
-  animation-timing-function: lineal;
-}
-.slider li{
-  width: 100%;
-  list-style: none;
-}
-.slider img{
-  height: 350px;
-  width: 100%;
-  object-fit: cover;
-  
-}
-
-@keyframes cambio{
-  0%{margin-left: 0;}
-  20%{margin-left: 0;}
-
-  25%{margin-left: -100%;}
-  45%{margin-left: -100%;}
-
-  50%{margin-left:-200%;}
-  70%{margin-left: -200%;}
-
-  75%{margin-left: -300%;}
-  100%{margin-left: -300%;}
-}
-/* titulo 1*/
-
-.titulo{
-  color:rgb(231, 158, 182);
-  margin: auto;
-  text-align: center;
-  font-size: 50px;
-  padding-left: 12%;
-  padding-right: 7%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* background-image: url(imagenes/eberhard-grossgasteiger-XLIKVFCGpBw-unsplash.jpg); */
-  background-position: center;
-  background-size: cover;
-  background-size: text;
-  -webkit-background-clip:text;
-
-   -webkit-text-stroke:1.7px rgb(230, 25, 93);
-}
-/* fondo */
 body{
-    background-color: rgb(85, 201, 255);
+  background: #fff;
 }
-/* introduccion */
-.intro{
-margin: 50px;
-font-size: 20px;
-font-weight: 60px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: justify;
-color:rgb(255, 253, 253)
+.nav-brand{
+  margin: 0;
+  padding: 20px;
+  background: #fff;
 }
-/* 1 er tema TITULO tecnologia */
+.brand{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'PT Sans', sans-serif;
+}
+/* nav - main */
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DF362D;
+}
+li{
+  float: left;
+}
+li a{
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #fff;
+}
+
+/* SHOWCASE(VITRINA) */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #DF362D;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+.btn:hover{
+  opacity: 0.9;
+}
+.showcase{
+  width: 100%;
+  height: 550px;
+  background: url("imagenes/Showcase/brooke-cagle-WHWYBmtn3_0-unsplash.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+  /*margin-bottom: 20px;*/
+  color: #fff;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
+}
+/* Sub-Title-1 */
+.sub-title{
+  background:  #DF362D;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 40px;
+  margin: 0;
+  padding: 20px;
+
+}
+.sub-title-1{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 19px;
+  color: #ffffff;
+}
+/* News.cards-women */
+.cards-women {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0;
+  padding: 22px;
+  background: green;
+}
+
+.cards-women img {
+  width: 100%;
+  height: 180px;
+ 
+}
+
+.cards-women h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.cards-women a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Ada*/
+.Eva{
+  object-fit: cover;
+}
+/* -------------------------------- */
 .titulo_tecnologia{
   text-align: center;
   font-size: 190%;
