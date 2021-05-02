@@ -1,3 +1,5 @@
 # Tech Women News
 Women who are changing the world of technology.
-<img src="/imagenes/ImgReadme" alt="FirstImg"/>
+<br>
+<img src="imagenes/ImgReadme/readme01" alt="FirstImg"/>
+<img src="imagenes/ImgReadme/readme02" alt="SecondImg"/>
